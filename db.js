@@ -3,7 +3,7 @@ const db = new Sequelize("postgres://postgres:secret@localhost:3000/postgres");
 const { Movie } = require("./sequelize-rest");
 
 db.sync().then(() => console.log("Tables created!"));
-// Model.create to insert 3 rows of sample data
+// // Model.create to insert 3 rows of sample data
 // .then(() =>
 //   Promise.all([
 //     Movie.create({

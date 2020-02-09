@@ -20,4 +20,8 @@ const Movie = db.define(
   { tableName: "movies" }
 );
 
+const Team = db.define("team", {
+  name: Sequelize.STRING
+});
+
 module.exports = Movie;
