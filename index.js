@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3002;
+const port = 3003;
 // const db = require("./db");
 const movieRouter = require("./router");
 
@@ -14,3 +14,8 @@ app.get("/", (request, response) => {
 app.listen(port, () => {
   console.log(`Server has started, listening on: ${port}`);
 });
+
+// Important:
+// Posgres server port: 5432 (inside docker container, listening for host requests)
+// Host port: 3000
+// Express server port: 3003

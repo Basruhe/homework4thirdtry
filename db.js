@@ -32,3 +32,5 @@ db.sync().then(() => console.log("Tables created!"));
 // }
 
 module.exports = db;
+
+// TODO; hardcoded movie resources don't work. Map them over the table?
